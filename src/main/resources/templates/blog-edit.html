@@ -10,7 +10,7 @@
 <header th:insert="blocks/header :: header"></header>
 
 <div class = "container mt-5 mb-5">
-    <h1>Editing materials</h1>
+    <h1>Edit post</h1>
     <div th:each="post : ${post}">
         <form method="post">
             <input type="text" th:value="${post.title}" name="title" placeholder="Please input title" class="form-control"> <br>

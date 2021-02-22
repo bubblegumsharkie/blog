@@ -14,10 +14,12 @@
         <h1 th:text="${post.title}"></h1>
         <p th:text="${post.full_text}"></p>
         <p><b>Views:</b> <span th:text="${post.views}"/></p>
-        <a th:href="'/blog/' + ${post.id} + '/edit'" class="btn btn-warning">Edit</a>
-        <a th:href="'/blog/' + ${post.id} + '/remove'" class="btn btn-warning">Delete</a>
+        <a th:href="'/blog/' + ${post.id} + '/edit'" class="btn btn-outline-dark">Edit</a>
+        <a th:href="'/blog/' + ${post.id} + '/remove'" class="btn btn-danger">Remove</a> <br><br>
+<!--        <form th:action="'/blog/' + ${id} + '/remove'" method="post">-->
+<!--            <button class="btn btn-warning" type="submit">Delete</button>-->
+<!--        </form>-->
     </div>
-
 </div>
 
 <footer th:insert="blocks/footer :: footer"> </footer>
